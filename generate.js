@@ -13,7 +13,7 @@ function generatePassword(length, strength) {
   const characterSet = chars[strength];
 
   if (!characterSet) {
-      throw new Error('Invalid strength level');
+      throw new Error('Invalid strength levels');
   }
 
   let password = '';

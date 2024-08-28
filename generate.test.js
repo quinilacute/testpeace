@@ -34,7 +34,7 @@ describe('generatePassword', () => {
         expect(() => generatePassword(10, 'invalid')).toThrow('Invalid strength level');
     });
 
-    it('should throw an error for password length less than 1', () => {
+    it('should thrown an error for password length less than 1', () => {
         expect(() => generatePassword(0, 'low')).toThrow('Password length must be greater than 0');
     });
 });
